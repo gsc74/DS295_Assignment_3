@@ -7,7 +7,7 @@
 
 int main(int argc, char* argv[])
 {
-    int64_t n = 24 * std::pow(10, 9)/sizeof(int);
+    int64_t n = 25 * 1024 * 1024 * 1024 / sizeof(int); // 24GB
 
     auto start = std::chrono::high_resolution_clock::now();
     std::vector<int> rand_array(n);
